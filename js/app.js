@@ -30,6 +30,13 @@ $('.hadouken').finish().show()
   // ryu goes back to his ready position
   });
 
+$(document).on('keydown', function(e) {
+    if (e.keyCode === 88) {
+ 	$('.ryu-ready').hide();
+	$('.ryu-cool').show();
+    };
+});
+
 });
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
